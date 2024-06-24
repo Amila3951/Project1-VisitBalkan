@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: "Playpen Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    font-size: smaller;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Menu */
+nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    padding-left: 1rem;
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#logo {
+    font-size: 180%;
+    line-height: 75px;
+    margin: 0%;
+}
+
+
+
+main {
+    flex: 1 0 auto;
+    margin-top: 50px;
+}
+
+
+#hero {
+    height: 500px;
+    width: 100%;
+    background: url("../css/thumb-1920-1051404.webp") no-repeat center center/cover;
+    position: relative;
+
+
+}
+
+#cover-text {
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#cover-text>h2,
+#cover-text>h3 {
+    color: rgb(209, 209, 190);
+}
+
+#tours {
+    font-size: 150%;
+    text-wrap: wrap;
+    position: relative;
+    text-align: center;
+}
+
+
+#meetups {
+    background: url("../css/sarajevo.jpg") no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#meetups div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+    font-size: 120%;
+}
+
+
+#location h3 {
+    color: #fafafa;
+}
+
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+
+#signup {
+    background-image: url("../images//beach-pasjaca-dubrovnik-popovici-6678038b28a2b.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+    font-size: 130%;
+    text-align: center;
+}
+
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #000000;
+}
+
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+
+    main {
+
+        margin-top: 79px;
+    }
+
+
+    #cover-text {
+        width: 350px;
+        right: 50px;
+    }
+
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+
+    #photos {
+        column-count: 4;
+    }
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description"
+        content="Visit Balkans. Travel site to visit the Balkans: Bosnia and Herzegovina, Croatia, Serbia">
+    <meta name="keywords"
+        content="travel, travel agency, travel page, Balkans, Bosnia and Herzegovina, Croatia, Serbia, visit Balkans, vacation, trip">
+
+
+    <title>Visit Balkans</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Visit Balkans</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-ellipsis"></i></label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section id="signup">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+
+                <h2> <i class="fa-solid fa-pencil"></i> Sign Up!</h2>
+
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+
+                <div class="radio-buttons">
+                    <div>
+                        <label for="Bosnia">Bosnia and Herzegovina</label>
+                        <input type="radio" name="where" id="Bosnia" value="option1" required checked>
+                    </div>
+                    <div>
+                        <label for="Croatia">Croatia</label>
+                        <input type="radio" name="where" id="Croatia" value="option2" required>
+                    </div>
+                    <div>
+                        <label for="Serbia">Serbia</label>
+                        <input type="radio" name="where" id="Serbia" value="option3" required>
+                    </div>
+                </div>
+                <button type="submit" class="join-button">Let's Travel</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Our Facebook page">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Our Twitter page">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Our YouTube page">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/617dcc2041.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
